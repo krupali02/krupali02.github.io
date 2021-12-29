@@ -11,10 +11,10 @@ var currentScrollPos = window.pageYOffset;
 }
 
 
-function hover(element) {
-    element.setAttribute('src', 'img/second.png');
-  }
+// function hover(element) {
+//     element.setAttribute('src', 'img/second.png');
+//   }
   
-  function unhover(element) {
-    element.setAttribute('src', 'img/first.png');
-  }
+//   function unhover(element) {
+//     element.setAttribute('src', 'img/first.png');
+//   }
