@@ -1,0 +1,500 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: #252525 !important;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+#bodyFull {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+}
+
+#navbarFull {
+    background-color: rgba(37, 37, 37, 0.69) !important;
+    padding: 6px;
+
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.7s; /* Transition effect when sliding down (and up) */
+}
+
+#logo {
+    margin: 0px 0px 0px 20px
+}
+
+#navbarFull a {
+    color: rgb(0, 192, 250) !important;
+    border: rgb(0, 192, 250) 1px solid !important;
+    border-radius: 5.5px !important;
+    font-size: 13px !important;
+    margin: 5px 20px 0px 10px !important;
+    transition: 0.3s;
+    padding: 5px 10px 6px 10px !important;
+}
+
+#navbarFull a:hover {
+    color: rgb(255, 0, 0) !important;
+    border: rgb(255, 0, 0) 1px solid !important;
+    box-shadow: 0 0px 10px rgb(255, 0, 0) !important;
+    background-color: #25252500 !important;
+}
+
+
+.introduction{
+    color: rgb(255, 0, 98);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-size: 25px;
+    line-height: 2;
+    margin-left: 6%;
+    margin-top: 12%;
+    margin-right: 12%;
+    margin-bottom: 10%;
+    transition: 0.4s;
+}
+
+#clickHere {
+    transition: 0.4s;
+}
+
+#clickHere:hover {
+    color: rgb(255, 249, 252) !important;
+}
+
+
+.blinking-cursor {
+
+    margin-right:-.1em;
+    margin-left:-.1em;
+    font-weight: 100;
+    font-size: 30px;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink{
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  }
+  
+  @-o-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+.intro {
+    font-weight: 600 !important;
+    font-size: 37px !important;
+}
+
+#aboutMe {
+    color: white !important;
+    margin-top: 20%;
+}
+
+#aboutMeParagraph {
+    font-size: 15px !important;
+    line-height: 25px !important;
+    font-weight: 300 !important;
+}
+
+#projectHeader {
+    font-weight: 700 !important;
+    font-size: 40px !important;
+    color: rgb(255, 0, 98);
+}
+
+.projectSubHeaders{
+    font-weight: 600 !important;
+    color: rgb(255, 153, 0);
+}
+
+/* .col-sm {
+    border: white 2px solid !important;
+    padding-left: 40px;
+} */
+
+.card {
+    background-color: #25252500 !important;
+    border: none !important;
+    transition: 0.4s;
+}
+
+#mockup {
+    transition: 0.5s ease;
+    width: 80%;
+    margin-left: auto;
+    margin-right : auto;
+}
+
+#mockup3 {
+    transition: 0.5s ease;
+    width: 90%;
+    margin-left: auto;
+    margin-right : auto;
+}
+
+#mockup2:hover {
+    transform: scale(1.06);
+}
+
+#mockup2 {
+    transition: 0.5s ease;
+    width: 80%;
+    margin-left: auto;
+    margin-right : auto;
+
+  
+}
+
+#mockup:hover {
+transform: scale(1.06);
+
+}
+
+.card-title {
+    font-weight: 600 !important;
+    color: #a7e7cf;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 12px;
+    color:  #f6f5fa !important;
+}
+
+#websiteCard {
+    border: 1px solid rgb(109, 109, 109) !important; 
+    border-radius: 5px !important;
+    width: 92% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 25px;
+    transition: 0.4s;
+}
+
+#websiteHeader {
+    margin-left: 4% !important;
+}
+
+.webHeader {
+    font-size: 22px !important;
+    color: rgb(226, 226, 226) !important;
+    font-weight: 600 !important;
+}
+
+.webInfo {
+    font-size: 12px !important;
+    color: rgb(226, 226, 226) !important;
+    font-weight: 300;
+}
+
+#githubButton {
+    color: rgb(38, 236, 226);
+    font-weight: 700 !important;
+    font-size: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.123);
+    letter-spacing: 1.3px;
+    padding: 4px;
+    transition: 0.4s;
+}
+
+#githubButton:hover {
+    background-color: rgb(38, 236, 226);
+    color: #252525;
+}
+
+#githubButton2 {
+    color: rgb(38, 236, 226);
+    font-weight: 700 !important;
+    font-size: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.123);
+    letter-spacing: 1.3px;
+    padding: 4px;
+    transition: 0.4s;
+    margin-bottom: 10px;
+}
+
+#githubButton2:hover {
+    background-color: rgb(38, 236, 226);
+    color: #252525;
+}
+
+.lang {
+    color: white;
+    margin: 2.5% !important;
+    font-size: 11px !important;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+#webImageRight {
+    /* margin-right: 0.8cm; */
+    float: right !important;
+    opacity: 0.2;
+    transition: 0.4s;
+}
+
+/* #webImageLeft {
+    margin-left: 0.8cm;
+} */
+#websiteCard:hover {
+    border: 1px solid rgb(255, 255, 255) !important;
+    box-shadow: 0 0px 7px rgba(238, 238, 238, 0.479) !important;
+    transform: scale(1.01) !important;
+}
+
+#websiteCard:hover #webImageLeft {
+    opacity: 1 !important;
+    transform: scale(1.01) !important;
+}
+
+#websiteCard:hover #webImageRight {
+    opacity: 1 !important;
+    transform: scale(1.01) !important;
+}
+
+#webImageLeft {
+    opacity: 0.2;
+    transition: 0.4s;
+}
+/* 
+#webImageLeft:hover {
+    opacity: 1 !important;
+} */
+
+#samp2 {
+    /* border: #f6f5fa 1px solid; */
+    float: right;
+    text-align: end;
+}
+
+/*EXPERIENCE AND AWARDS*/
+#expRow {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#expBorder {
+    border: 1px solid rgb(80, 80, 80);
+    background-color: #25252500;
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px;
+    transition: 0.4s;
+}
+
+#expBorder:hover {
+    border: 1px solid rgb(255, 255, 255) !important;
+    box-shadow: 0 0px 7px rgba(238, 238, 238, 0.479) !important;
+    /* transform: scale(1.01) !important; */
+}
+
+#expBorder:hover .expLocation{
+    color: rgb(255, 0, 98) !important;
+}
+
+#expContent {
+    padding: 10px 0px 10px 0px;
+}
+
+.expHeader {
+    color: rgb(38, 236, 226) !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.expLocation {
+    color: rgb(255, 0, 98) !important;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 11px !important;
+    font-weight: 300;
+}
+
+.expList {
+    margin-top: -5px;
+    font-weight: 300;
+    font-size: 12.5px;
+}
+
+/*Contact Me*/
+#mail {
+    color: rgb(209, 208, 208);
+    font-size: 18px;
+  
+  }
+  
+  #email {
+    font-weight: bold;
+    color: rgb(1, 221, 210);
+    font-size: 17px;
+    opacity: 0.25;
+    transition: 0.4s;
+    margin-top: -3cm;
+  }
+  
+  #email:hover {
+    color: rgb(0, 255, 242);
+    opacity: 1 !important;
+  }
+
+  #loge {
+    height: 40px; 
+    margin-top: 0.2cm;
+     margin-left: 1cm;
+     margin-right: 1cm;
+    opacity: 0.15;
+    transition: 0.4s;
+  }
+  
+  #loge:hover {
+    opacity: 1;
+  }
+
+
+
+@media screen and (max-width: 479px) {
+    #aboutMeParagraph {
+        font-size: 15px !important;
+    }
+
+    .introduction{
+        color: rgb(255, 0, 98);
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 25px;
+        line-height: 2;
+        margin-left: 6%;
+        margin-top: 150px;
+        margin-right: 12%;
+        margin-bottom: 10%;
+        transition: 0.4s;
+    }
+
+    #websiteHeader {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #webImageRight {
+        margin-top: 8%;
+        margin-right: 15%;
+        opacity: 1 !important;
+    }
+
+    #webImageLeft {
+        opacity: 1 !important;
+        transition: 0.4s;
+    }
+
+    #loge {
+       
+        opacity: 1 !important;
+      }
+    
+    #email {
+        opacity: 1 !important;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    #webImageRight {
+       margin-left: auto !important;
+       margin-right: auto !important;
+       float: none !important;
+       margin-top: 5% !important;
+    }
+
+    #webImageLeft {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        margin-bottom: 5% !important;
+     }
+
+    #samp2 {
+        /* border: #f6f5fa 1px solid; */
+        float: left;
+        text-align: left;
+    }
+
+    #loge {
+    height: 40px; 
+    margin-top: 0.2cm;
+     margin-left: 1cm;
+     margin-right: 1cm;
+    opacity: 15%;
+    transition: 0.4s;
+  }
+}
+
+@media screen and (max-width: 765px) and (min-width: 569px) {
+    #mockup2:hover {
+        transform: scale(1.06);
+    }
+    
+    #mockup2 {
+        transition: 0.5s ease;
+        width: 33%;
+        /* height: 25%; */
+        margin-left: auto;
+        margin-right : auto;
+    
+      
+    }
+}
