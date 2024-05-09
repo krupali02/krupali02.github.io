@@ -1,65 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="En">
+  <head>
+    <meta charset="UTF-8" />
     <title>Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="default.css" title="style" />
+    <script src="default.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
 
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            margin: 18px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .centered-text {
-            text-align: center;
-        }
-
-        #intro {
-            font-weight: 600;
-            font-size: 2.8rem;
-        }
-
-        #link1 {
-            font-weight: 400;
-            font-size: 1.6rem;
-        }
-
-        #link2 {
-            font-weight: 400;
-            font-size: 1.2rem;
-        }
-
-        .footer1 {
-            padding-top: 1em;
-            font-weight: 400;
-            font-size: 1rem;
-        }
-
-        
-    </style>
-
-</head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/eok3cxa.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
+    <link href='https://fonts.googleapis.com/css?family=Anonymous Pro' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-<body>
-    <div class="centered-text">    
-        <p id="intro"> Hello there 👋</p>
-        <p id="link1">If you want to look at my portfolio coded from scratch, please <a href="https://krupali02.github.io/krupalis-personal-portfolio/" target="_blank">click here</a></p>
-        <p id="link2">and if you would like to check out my design portfolio, please <a href="http://krupalipatel.ca/" target="_blank">click this link</a></p>
-       
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- Styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+      <!-- Creating Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarFull" style="z-index: 1000;">
+        <img id="logo" src="img/logo.png"  width=50px height=55px style="margin-top: 0.3cm;"> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+          <div id="navbarButtons">
+            <a class="btn btn-outline-primary" href="#aboutMe">(1) About Me <span class="sr-only">(current)</span></a>
+            <a class="btn btn-outline-primary" href="#projects">(2) Projects</a>
+            <a class="btn btn-outline-primary" href="#experience">(3) Experience</a>
+            <a class="btn btn-outline-primary" href="#contact">(4) Contact</a>
+            <a class="btn btn-outline-primary" href="Resume/KrupaliPatel_Resume.pdf" target="_blank" >Resumé</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Introduction Section of the website (with the code component) -->
+      <div id="bodyFull">
+          <div class="introduction">      
+              <span style="color: rgb(255, 160, 17);">if</span>
+              <span style="color: rgb(255, 255, 255);">(</span>
+              <span style="color: rgb(38, 236, 226); margin-left: -10px;">you are new</span>
+              <span style="color: rgb(255, 255, 255); margin-left: -10px;">) {</span>
+              <br>
+              <a href="#aboutMe" id="clickHere" style="text-decoration: none; color: rgb(255, 0, 98);">click here</a>
+              <span style="color: rgb(255, 255, 255); margin-left: -10px;">;</span>
+              <br>   
+          
+              <span style="color: rgb(255, 255, 255);">}</span><br>
+              <span style="color: rgb(255, 160, 17);">else</span> 
+              <span style="color: rgb(255, 255, 255);">{</span><br>
+              <span style="color: rgb(255, 255, 255);">System.out.println (</span>
+              <span style="margin-left: -13px;">"WELCOME BACK!"</span>
+              <span style="color: rgb(255, 255, 255); margin-left: -13px;">);</span> <br>
+              <span style="color: rgb(255, 255, 255);">}</span>
+              <span class="blinking-cursor" style="margin-left: -12px; font-size: 30px;">|</span>
+          </div>
+
+        <div></div>
+
+        <!-- About Me Section -->
+        <div id="aboutMe">
+          <br>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img id="mockup3" src="img/Image.png"  width=300px height=auto style="margin-top: 2.2cm;"> 
+                </div>
+                <div class="col-sm-7">
+                  <br>
+                  <br>
+                  <h2 class="intro" style="margin-bottom: 15px !important;">Hello, I'm Krupali Patel 😊 </h2>
+                  <p id="aboutMeParagraph">
+                    a fourth-year student at York University studying computer science (BSc Honors). Over the past year, I have gained experience with <span class="intro-text">JavaScript, CSS, HTML, Java, </span> and <span class="intro-text">Android App development </span>  through assignments and various personal projects. Also, I enjoy working with many tools and platforms for coding, with some of them being Eclipse, IntelliJ, Android Studio Code, and Visual Studio Code. I have also used <span class="intro-text">Figma </span> through YU Hacks hackathon, User Interface course taken at York University and personal projects. I have previously completed an internship at <span class="intro-text">Scotiabank</span> as a full stack web developer, where I got to experience the frontend and backend side of web development while learning new languages such as <span class="intro-text">C#</span> and <span class="intro-text">MySQL</span>!
+                    <br>
+                    <br>
+                    Outside of my work-life, I have many side hobbies. For the past eight years, I have experimented with different forms of visual arts ranging from painting to embroidery. These art projects help bring out my creative side and are a great way to practice and learn new techniques! Aside from art, I also love F1 and cannot wait for the 2024 season (go Ferrari)!
+                    <br>
+                    <br>
+                    In the future, I hope to gain more experience in my field through working on many more projects and with others who share similar interests as me.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+         
+
+          <!-- Projects Section -->
+          <div id="projects">
+            <br>
+            <h2 class="d-flex justify-content-center" id="projectHeader">Projects</h2>
+
+            <div style="margin-left: 4%; ">
+            <!-- case studies -->
+            <h3 class="projectSubHeaders" style="font-size: 30px; margin-top: 20px;">CASE STUDIES</h3>
+            <br> 
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="case_study_mockup" style="width: 92%;" src="img/studentBudgetPlanner/main_mockup.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Student Budget Planner</h5>
+                    <a class="case-study-header"><span style="color: #FF0062;">FALL 2023</span> • UX RESEARCH, UI DESIGN</a> <br> 
+                    <p class="card-text">Helping students plan, organize and budget their money more efficiently throughout the school year. </p>
+                    <a style="padding: 10px; font-size: 12px;" href="https://krupali02.github.io/student-budget-planner/" type="button" class="btn btn-outline-primary" id="githubButton2">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="case_study_mockup" style="width: 92%;" src="img/WhackAMole/main_mockup.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Whack A Mole</h5>
+                    <a class="case-study-header"><span style="color: #FF0062;">WINTER 2024</span> • UX RESEARCH</a> <br> 
+                    <p class="card-text">
+                      Application developed to test the efficiency of handedness of users playing the game.</p>
+                    <a style="padding: 10px; font-size: 12px;" href="https://github.com/krupali02/whack-a-mole" type="button" class="btn btn-outline-primary" id="githubButton2">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <br>
+            <br>
+            <br>
+
+
+            <!-- App Section of the projects -->
+            <h3 class="projectSubHeaders d-flex justify-content-center" style="font-size: 30px; margin-top: 20px;">APPS</h3>
+            <div class="container">
+                <div class="row">
+                  <!-- Advi$or App Section -->
+                  <div class="col-sm d-flex justify-content-center">
+                    <div class="card text-center d-flex justify-content-center" >
+                        <img id="mockup" src="img/mockup-02.png"  width=100% height=auto style="margin-top: 0.3cm;"> 
+                        <div class="card-body">
+                          <h5 class="card-title">Advi$or</h5>
+                          <a class="language-mobile">Figma<br></a>
+                          <a href="https://www.youtube.com/watch?v=XHhMaPgaltE&ab_channel=MahiImra" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton2">DEMO</a>
+                          <p class="card-text">Advi$or is a financial budgeting app that will help individuals budget and make the most of their money.
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- Bank On It App Section -->
+                  <div class="col-sm d-flex justify-content-center">
+                    <div class="card text-center" >
+                        <img id="mockup" src="img/mockup-05.png"  width=100% height=auto style="margin-top: 0.3cm;"> 
+                        <div class="card-body">
+                          <h5 class="card-title">Bank On It</h5>
+                          <a class="language-mobile">Java<br></a>
+                          <a href="https://github.com/krupali02/Banking-App" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton2">GITHUB</a>
+                          <p class="card-text">App used to track certain actions (transactions, withdraw, transfer etc.) from your bank account.
+                          </p>
+                          <!-- <p style="color: #b22985; font-size: 12px; font-weight:  400; margin-top:0px">JAVA</p> -->
+                        </div>
+                    </div>
+                  </div>
+                  <!-- Tic Tac Toe App Section -->
+                  <div class="col-sm d-flex justify-content-center">
+                    <div class="card text-center" >
+                        <img id="mockup" src="img/mockup-03.png"  width=100% height=auto style="margin-top: 0.3cm;"> 
+                        <div class="card-body">
+                          <h5 class="card-title">Tic Tac Toe</h5>
+                          <a class="language-mobile">Java<br></a>
+                          <a href="https://github.com/krupali02/Tic-Tac-Toe-App" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton2">GITHUB</a>
+                          <p class="card-text">A version of the classic game of Tic Tac Toe, played between two players.
+                          </p>
+                        </div>
+                    </div> 
+                  </div>
+                  <!-- Knock Knock App Section -->
+                  <div class="col-sm d-flex justify-content-center">
+                    <div class="card text-center" >
+                        <img id="mockup2" src="img/mockup-04.png"  width=100% height=auto style="margin-top: 0.3cm;"> 
+                        <div class="card-body">
+                          <h5 class="card-title">Knock Knock</h5>
+                          <a class="language-mobile">React Native <br></a>
+                          <a href="https://github.com/krupali02/Knock-Knock" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton2">GITHUB</a>
+                          <p class="card-text">Mobile application that provides the user with 380+ unique jokes.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Website Section of the projects -->
+            <h3 class="projectSubHeaders" id="websiteHeader" style="font-size: 30px; margin-top: 30px;">WEBSITES</h3>
+            <br>
+
+            <!-- Spacetagram Website -->
+            <div class="card">
+              <div class="card-body" id="websiteCard">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-8" id="samp">
+                      <h2 class="webHeader">Spacetagram</h2>
+                      <p class="webInfo">Explore photos from Mars thanks to NASA's API.</p>
+                      <a href="https://krupali02.github.io/Spacestagram/" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton" style="margin-left: 0% !important; margin-right: 2% !important;">LINK</a>
+
+                      <a  href="https://github.com/krupali02/Spacestagram" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton">GITHUB</a>
+                      <a class="lang">JavaScript</a>
+                      <a class="lang">HTML</a>
+                      <a class="lang">CSS</a>
+                    </div>
+                    <div class="col-sm-4" id="samp">
+                      <img id="webImageRight" class="rounded" id="hid" src="img/Spacetagram.png" height="100px" width="auto" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Here 4 You Website -->
+            <div class="card" id="cardOverall">
+              <div class="card-body" id="websiteCard">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4" id="samp">
+                      <img id="webImageLeft" class="rounded float-left" id="hid" src="img/Here4You.png" height="100px" width="auto" >
+                    </div>
+                    <div class="col-sm-8 " id="samp2">
+                      <h2 class="webHeader">Here 4 You</h2>
+                      <p class="webInfo  ">4 different activities you can do whenever you are feeling stressed and need to relax.</p>
+                      <a class="lang  ">JavaScript</a>
+                      <a class="lang  ">HTML</a>
+                      <a class="lang" >CSS</a>
+                      <a href="https://github.com/krupali02/Here4You" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton" style="margin-left: 1% !important; margin-right: 0% !important;">GITHUB</a>
+
+                      <a href="https://krupali02.github.io/Here4You/" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton" style="margin-left: 2% !important; margin-right: 0% !important;">LINK</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Marvel Diaries Website -->
+            <div class="card">
+              <div class="card-body" id="websiteCard">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-8" id="samp">
+                      <h2 class="webHeader">Marvel Diaries</h2>
+                      <p class="webInfo">Collection of my thoughts and opinions on all the Marvel movies that I have watched (in release date order).</p>
+                      <a href="https://krupali02.github.io/marveldiaries/" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton" style="margin-left: 0% !important; margin-right: 2% !important;">LINK</a>
+
+                      <a  href="https://github.com/krupali02/marveldiaries" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton">GITHUB</a>
+                      <a class="lang">JavaScript</a>
+                      <a class="lang">HTML</a>
+                      <a class="lang">CSS</a>
+                    </div>
+                    <div class="col-sm-4" id="samp">
+                      <img id="webImageRight" class="rounded" id="hid" src="img/marvel.png" height="100px" width="auto" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Diaries Website -->
+            <div class="card" id="cardOverall">
+              <div class="card-body" id="websiteCard">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4" id="samp">
+                      <img id="webImageLeft" class="rounded float-left" id="hid" src="img/artist.png" height="100px" width="auto" >
+                    </div>
+                    <div class="col-sm-8 " id="samp2">
+                      <h2 class="webHeader">Artist Diaries</h2>
+                      <p class="webInfo  ">Collection of my favourite artists, their history and their most famous art pieces.</p>
+                      <a class="lang  ">JavaScript</a>
+                      <a class="lang  ">HTML</a>
+                      <a class="lang" >CSS</a>
+                      <a href="https://github.com/krupali02/marveldiaries" target=”_blank” type="button" class="btn btn-outline-primary  " id="githubButton" style="margin-left: 1% !important; margin-right: 0% !important;">GITHUB</a>
+
+                      <a href="https://krupali02.github.io/Artist-Diaries/" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton" style="margin-left: 2% !important; margin-right: 0% !important;">LINK</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Space Diaries Website -->
+            <div class="card">
+              <div class="card-body" id="websiteCard">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-8" id="samp">
+                      <h2 class="webHeader">Space Diaries</h2>
+                      <p class="webInfo">Collection of information about the planets, stars and many other mysterious things in our universe.
+                      </p>
+                      
+                      <a href="https://krupali02.github.io/Space-Diaries/" target=”_blank” type="button" class="btn btn-outline-primary" id="githubButton" style="margin-left: 0% !important; margin-right: 2% !important;">LINK</a>
+
+                      <a type="button" class="btn btn-outline-primary" id="githubButton">GITHUB</a>
+
+                      <a class="lang">JavaScript</a>
+                      <a class="lang">HTML</a>
+                      <a class="lang">CSS</a>
+                    </div>
+                    <div class="col-sm-4" id="samp">
+                      <img id="webImageRight" class="rounded" id="hid" src="img/space.png" height="100px" width="auto" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <!-- Experience Section -->
+          <div id="experience">
+            <br>
+            <h2 class="d-flex justify-content-center" id="projectHeader" style="margin-top:5px">Experience</h2>
+
+            <div class="row" id="expRow">
+                <div class="col-sm" id="expBorder">
+                  <div class="card">
+                    <div class="card-body" id="expContent">
+                      <h2 class="expHeader">Full Stack Web Developer</h2>
+                      <p class="expLocation">@ Scotiabank  <br> <span style="color: rgb(216, 65, 123); ">(2022 - 2023)</span></p>
+                      <ul class="expList">
+                        <li>I was working with the <span class="experienceSpan">Global Banking and Markets (GBM) Web Team</span>, where I worked along side team members to develop web tools for other teams from various locations across the world!
+                        </li>
+                        <br>
+                        <li>For the frontend components of these projects, I worked with programming languages such as <span class="experienceSpan">HTML, CSS, JavaScript</span> (specifically <span class="experienceSpan">Bootstrap</span> ). 
+                        </li>
+                        <br>
+                        <!-- <li>I worked around different way to make the overall user interface (UI) and user experience (UX) easier for the respective clients, and performed changes based off of the feedback provided.  
+                        </li>
+                        <br> -->
+                        <li>For the backend, our team mainly worked with <span class="experienceSpan">C#</span>, which was heavily connected with the frontend components, in order to add functionality to the web tool. 
+                        </li>
+                        <br>
+                        <li>For the collection of data, we used <span class="experienceSpan">MySQL</span> to retrieve and reflect the proper data onto these web tools developed.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm" id="expBorder">
+                  <div class="card">
+                    <div class="card-body" id="expContent">
+                        <h2 class="expHeader">Promotions Director <span style="font-size: 12px; font-weight: 500"><br>and Promotions Assistant</span></h2>
+                        <p class="expLocation">@ Bethune Promotions and Advertisement Committee <br> <span style="color: rgb(216, 65, 123); ">(2021 - 2023)</span></p>
+                        <ul class="expList">
+                          <li>Create graphic designs for social media pages using <span class="experienceSpan">Adobe Photoshop</span> Adobe Photoshop and <span class="experienceSpan">Adobe Illstrator</span>
+                        </li>
+                          <br>
+                          <li>Attended meetings with council members to discuss new ideas and methods for promoting special events
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm" id="expBorder">
+                    <div class="card">
+                        <div class="card-body" id="expContent">
+                            <h2 class="expHeader">Student Mentor</h2>
+                            <p class="expLocation">@ York University  <br> <span style="color: rgb(216, 65, 123); ">(2021 - 2021)</span></p>
+                            <ul class="expList">
+                              <li>Focused on teaching the students content in relation to <span class="experienceSpan">computational thinking</span> (pseudocodes, flowcharts, coding basics etc.)</li>
+                              <br>
+                              <li>Communicated with members on the team in regard to the content being taught weekly
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-sm" id="expBorder">
+                    <div class="card">
+                        <div class="card-body" id="expContent">
+                            <h2 class="expHeader">Graphic Designer</h2>
+                            <p class="expLocation">@ York Region Arts Council Youth Committee  <br> <span style="color: rgb(216, 65, 123); ">(2021 - 2021)</span></p>
+                            <ul class="expList">
+                                <li>Created <span class="experienceSpan">graphics</span> for the committee’s social media pages (Instagram, Facebook, Linktree etcetera)</li>
+                                <br>
+                                <li>Responsible for communicating with the committee members in terms of working out new ideas</li>
+                                <br>
+                                <li>Worked with various <span class="experienceSpan">digital softwares</span> including Adobe Illustrator, Adobe Draw and Canva</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <!-- Contact Me Section -->
+          <div id="contact">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h2 class="d-flex justify-content-center" id="projectHeader" style="margin-top:5px; margin-bottom: 10px;">Contact Me</h2>
+
+              <div class="row justify-content-center">
+                  <div class="col-sm-5 d-flex justify-content-center"  >
+                      <p>Feel free to send me an email at</p>
+                      <br>
+                  </div>    
+              </div>
+
+              <div class="row justify-content-center">
+                  <div class="col-sm-5 d-flex justify-content-center"  >
+                      <div>
+                          <a href = "mailto: kp20@my.yorku.ca" id="email" style="text-decoration: none;">kp20@my.yorku.ca</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row justify-content-center">
+                  <div class="col-sm-5 d-flex justify-content-center"  >
+                      <p></p>
+                  </div>    
+              </div>
+
+              <div class="row justify-content-center">
+                  <div class="col-sm-5 d-flex justify-content-center"  >
+                      <br>
+                      <p>or connect with me through</p>
+                  </div>    
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-sm-2 d-flex justify-content-center"  >
+                    <a href="https://www.linkedin.com/in/krupalip20/" target="_blank" style="text-decoration: none;"> <img src="img/linkedin.png" id="loge"> </a>  
+                    
+                </div>
+
+                <div class="col-sm-2 d-flex justify-content-center"  >
+                    <a href="https://github.com/krupali02" target="_blank"> <img src="img/github.png" id="loge"> </a> 
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+          </div>
+        </div>
     </div>
-</body>
+        
+  </body>
 </html>
-
-
-   
-
-
-
